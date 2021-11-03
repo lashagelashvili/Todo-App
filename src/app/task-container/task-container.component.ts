@@ -8,11 +8,7 @@ import { Task } from './task'
 })
 export class TaskContainerComponent implements OnInit {
 
-  tasks: Task[] = [
-    { name: 'do smt', done: false },
-    { name: 'do blasld', done: true },
-    { name: 'do homework', done: false },
-  ];
+  tasks: Task[] = [];
 
   saveItems() {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
