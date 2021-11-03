@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Zen+Antique+Soft&display=swap");
+
+body {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-family: "Zen Antique Soft", serif;
+}

@@ -1,0 +1,80 @@
+.container {
+  margin: auto;
+  margin-top: 150px;
+  width: 650px;
+  height: 600px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+.tasks {
+  margin-top: 10px;
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+  background-color: darksalmon;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 540px;
+  font-size: 16px;
+}
+
+.addBtn {
+  background: #0066b2;
+  color: white;
+}
+
+.dltBtn {
+  background: #e41c38;
+  color: white;
+}
+
+mat-card-title {
+  font-size: 20px;
+}
+
+mat-list-item:hover {
+  background: rgb(202, 199, 199);
+  border-radius: 5px;
+}
+
+mat-card {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-left: -13px;
+}
+
+.icon {
+  color: white;
+  cursor: pointer;
+  width: 35px;
+  background: crimson;
+  text-align: center;
+  border-radius: 0 3px 3px 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

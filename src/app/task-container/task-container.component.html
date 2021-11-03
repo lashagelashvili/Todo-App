@@ -1,0 +1,13 @@
+<mat-card class="container">
+    <mat-card-title>New Task</mat-card-title>
+    <mat-card-content>
+        <div class="inputContainer">
+            <input type="text" class="input" placeholder="Add Task" (keyup.enter)='addTask(input)' #input>
+            <button mat-raised-button class="addBtn" (click)="addTask(input)">Add</button>
+        </div>
+        <mat-list class="list" *ngFor='let task of tasks; let i = index'>
+            <mat-list-item [ngClass]="task.done ? 'done' : ''" (click)='onDone(i)'>{{ task.name }}</mat-list-item>
+            <button mat-flat-button class='dltBtn' (click)='onDelete(i)'>&#x2715;</button>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
